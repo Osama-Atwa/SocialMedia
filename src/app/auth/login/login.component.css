@@ -1,0 +1,17 @@
+:host {
+  display: block;
+  margin-top: 1rem;
+}
+mat-form-field{
+  width: 100%;
+  margin-top: 1rem;
+}
+
+mat-spinner {
+  margin: auto;
+}
+
+mat-card {
+  width: 70%;
+  margin: auto;
+}

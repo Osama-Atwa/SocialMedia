@@ -1,0 +1,6 @@
+{
+  "env": {
+    "JWT": "Secret_long_word",
+    "MONGODB_ATLAS_PW": "RBYSbNXYyKS5KTSA"
+  }
+}
