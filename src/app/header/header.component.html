@@ -3,10 +3,24 @@
     <span><a routerLink="/" routerLinkActive="mat-primary">My Posts</a></span>
     <span class="example-spacer"></span>
     <ul>
-      <li *ngIf="userIsAuth"><a mat-button routerLink="/create" routerLinkActive="mat-accent"> Create Post</a></li>
-      <li *ngIf="!userIsAuth"><a mat-button routerLink="/auth/login" routerLinkActive="mat-accent"> Login</a></li>
-      <li *ngIf="!userIsAuth"><a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent"> Sign up</a></li>
-      <li *ngIf="userIsAuth"><button mat-button (click)="onLogout()"> LogOut</button></li>
+      <li *ngIf="userIsAuth">
+        <a mat-button routerLink="/create" routerLinkActive="mat-accent">
+          Create Post</a
+        >
+      </li>
+      <li *ngIf="!userIsAuth">
+        <a mat-button routerLink="/auth/login" routerLinkActive="mat-accent">
+          Login</a
+        >
+      </li>
+      <li *ngIf="!userIsAuth">
+        <a mat-button routerLink="/auth/signup" routerLinkActive="mat-accent">
+          Sign up</a
+        >
+      </li>
+      <li *ngIf="userIsAuth">
+        <button mat-button (click)="onLogout()">LogOut</button>
+      </li>
     </ul>
   </mat-toolbar-row>
 </mat-toolbar>
